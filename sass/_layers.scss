@@ -1,0 +1,2 @@
+// Cascade layer order: later layers beat earlier ones regardless of specificity.
+@layer reset, tokens, base, layout, components, utilities;

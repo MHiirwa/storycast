@@ -1,0 +1,41 @@
+@use "spacing" as *;
+
+@layer layout {
+  .container {
+    width: min(100% - 2 * var(--space-5), var(--page-width));
+    margin-inline: auto;
+  }
+
+  .section {
+    padding-block: var(--space-7);
+
+    &__title { margin-block-end: var(--space-5); }
+    &__intro {
+      max-width: var(--measure);
+      color: var(--color-muted);
+      margin-block-end: var(--space-6);
+    }
+  }
+
+  // CSS Grid: auto-fitting card grid
+  .grid {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    list-style: none;
+    padding: 0;
+  }
+
+  // Story page: article + sidebar
+  .story-layout {
+    display: grid;
+    gap: var(--space-6);
+
+    @include up("md") {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+      align-items: start;
+    }
+  }
+
+  .prose { max-width: var(--measure); }
+}

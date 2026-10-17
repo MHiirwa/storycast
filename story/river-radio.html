@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>River Radio | StoryCast</title>
+  <meta name="description" content="An audio story with a full transcript.">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-header__brand" href="../index.html">StoryCast</a>
+      <nav class="nav" aria-label="Main">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="../index.html">Home</a></li>
+          <li><a class="nav__link" href="night-market.html">Featured story</a></li>
+          <li><a class="nav__link" href="../about.html">About &amp; Access</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="story-layout">
+      <article aria-labelledby="story-title">
+        <header class="story-header">
+          <p class="media-card__type">Audio story</p>
+          <h1 id="story-title">River Radio</h1>
+          <p class="story-header__meta">Duration: 8 seconds · Transcript below</p>
+        </header>
+
+        <figure class="player">
+          <audio class="player__media" controls preload="metadata" aria-describedby="river-radio-desc">
+            <source src="../assets/media/river-radio.mp3" type="audio/mpeg">
+            <p>Your browser can't play this audio. Read the transcript below instead.</p>
+          </audio>
+          <figcaption id="river-radio-desc" class="player__caption">A low, steady radio tone plays for eight seconds, like a signal travelling along the river at dusk.</figcaption>
+        </figure>
+
+        <details class="transcript" open>
+          <summary class="transcript__summary">Transcript</summary>
+          <div class="transcript__body">
+            <p class="transcript__line"><span class="transcript__speaker">[Sound]</span> A low tone plays for eight seconds.</p>
+            <p class="transcript__line"><span class="transcript__speaker">Narrator:</span> A low signal travels along the river at dusk. Listen for the space between the notes. You can also <a href="../assets/transcripts/river-radio.txt">download the transcript (.txt)</a>.</p>
+          </div>
+        </details>
+      </article>
+
+      <aside class="related" aria-labelledby="related-title">
+        <h2 id="related-title">Related stories</h2>
+        <ul class="related__list">
+          <li><a href="night-market.html">The Night Market</a> <span class="media-card__meta">(video)</span></li>
+          <li><a href="../about.html">How StoryCast stays accessible</a></li>
+        </ul>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 StoryCast. A student project. <a href="../index.html">Back to home</a></p>
+    </div>
+  </footer>
+</body>
+</html>

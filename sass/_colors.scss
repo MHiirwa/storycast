@@ -1,0 +1,25 @@
+// Monochrome editorial palette. Text/background pairs exceed WCAG 2.1 AA.
+// ink on paper 17.4:1 | muted on paper 7.2:1 | white on accent 10.5:1
+$color-ink: #111111;
+$color-muted: #505050;
+$color-paper: #f7f7f5;
+$color-surface: #ffffff;
+$color-line: #d8d8d4;
+$color-accent: #3d3d3d;
+$color-accent-strong: #000000;
+$color-highlight: #e8e8e3;
+$color-on-accent: #ffffff;
+
+@layer tokens {
+  :root {
+    --color-ink: #{$color-ink};
+    --color-muted: #{$color-muted};
+    --color-paper: #{$color-paper};
+    --color-surface: #{$color-surface};
+    --color-line: #{$color-line};
+    --color-accent: #{$color-accent};
+    --color-accent-strong: #{$color-accent-strong};
+    --color-highlight: #{$color-highlight};
+    --color-on-accent: #{$color-on-accent};
+  }
+}

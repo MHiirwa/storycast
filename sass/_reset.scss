@@ -1,0 +1,27 @@
+@layer reset {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  img,
+  video,
+  audio {
+    display: block;
+    max-width: 100%;
+  }
+
+  video {
+    height: auto;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+}

@@ -1,0 +1,32 @@
+@use "sass:map";
+
+@layer tokens {
+  :root {
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4.5rem;
+
+    --radius: 0.35rem;
+    --measure: 68ch;
+    --page-width: 72rem;
+    --focus-ring: 3px solid var(--color-accent-strong);
+  }
+}
+
+// Breakpoints (used with the `up` mixin in media queries)
+$breakpoints: (
+  "sm": 40rem,
+  "md": 52rem,
+  "lg": 72rem,
+);
+
+@mixin up($name) {
+  @media (min-width: map.get($breakpoints, $name)) {
+    @content;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "storycast",
+  "version": "1.0.0",
+  "description": "Accessible 3-page media microsite",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": "sass sass/main.scss css/main.css --style=expanded --no-source-map",
+    "watch": "sass --watch sass/main.scss css/main.css --no-source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.105.1"
+  }
+}
